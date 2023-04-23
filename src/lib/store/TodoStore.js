@@ -18,7 +18,7 @@ export const addTodo = () => {
 	});
 };
 
-export const deleteTodo = () => {
+export const deleteTodo = (id) => {
 	todos.update((currentTodos) => {
 		return currentTodos.filter((todo) => todo.id !== id);
 	});
