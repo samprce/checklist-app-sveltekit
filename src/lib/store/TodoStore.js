@@ -39,7 +39,7 @@ export const editTodo = (id, text) => {
 	todos.update((currentTodos) => {
 		return currentTodos.map((todo) => {
 			if (todo.id === id) {
-				return { ...todo, complete: text };
+				return { ...todo, text };
 			}
 			return todo;
 		});
